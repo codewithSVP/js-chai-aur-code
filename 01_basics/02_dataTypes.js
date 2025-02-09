@@ -8,7 +8,7 @@ let isLoggedIn = true // boolean
 
 /* Primitive Data Types
 1. string
-2. integer
+2. number
 3. bigint
 4. boolean => true/false
 5. null => standalone value (object)
