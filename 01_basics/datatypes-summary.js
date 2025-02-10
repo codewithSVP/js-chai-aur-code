@@ -46,3 +46,27 @@ const myFunction = function() {
 }
 
 console.log(typeof myFunction)
+
+
+// ++++++++++++++++++++++++ TYPES OF MEMORIES ++++++++++++++++++++++++
+// Stack (for Primitive), Heap (for Non-Primitive)
+
+// Example for Stack Memory Management
+let myYoutubeName = "svp896"
+
+let anotherName = myYoutubeName
+anotherName = "8906!"
+console.log(myYoutubeName)
+console.log(anotherName)
+
+// Example for Heap Memory Management
+
+let userOne = {
+    email: "userOne@gmail.com",
+    upi: "u1upi@bankName.com"
+}
+
+let userTwo = userOne
+userTwo.email = "userTwo@gmail.com"
+console.log(userOne.email)
+console.log(userTwo.email)
