@@ -58,8 +58,34 @@ const users = [
 
 // console.log(ytUser)
 
-console.log(Object.keys(ytUser)) // returns an array of keys in object
-console.log(Object.values(ytUser)) // returns an array of values in object
-console.log(Object.entries(ytUser)) // returns arrays of key-value pairs from the object
+// console.log(Object.keys(ytUser)) // returns an array of keys in object
+// console.log(Object.values(ytUser)) // returns an array of values in object
+// console.log(Object.entries(ytUser)) // returns arrays of key-value pairs from the object
 
-console.log(ytUser.hasOwnProperty('LoggedIn')) // It returns true if the object has your specified property. If not, then it returns false.
+// console.log(ytUser.hasOwnProperty('LoggedIn')) // It returns true if the object has your specified property. If not, then it returns false.
+
+
+// +++++++++++++++++ Objects Destructing ++++++++++++++++++++++
+const course = {
+    courseName: "JS in Hindi | Chai aur Code",
+    price: 999,
+    courseInstructor: "Hitesh Chaudhary"
+}
+
+const {courseInstructor: Instructor} = course
+
+console.log(Instructor);
+
+
+// ---------- Now for the good stuff, JSON & APIs ----------
+// {
+//     name: "SVP",
+//     courseName: "JS in Hindi",
+//     price: "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
