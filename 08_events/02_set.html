@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code with SVP</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout performs the function given to it ONCE, after given timeout is succeeded.
+    // setTimeout(function() {
+    //     console.log('SVP')
+    // }, 2000)
+
+    // setInterval performs similarly to setTimeout, but in intervals. So basically, it performs function multiple times within given interval time
+    // setInterval(function() {
+    //     console.log('SVP')
+    // }, 2000)
+
+    const saySVP = function() {
+        console.log('SVP')
+    }
+
+    const changeText = function() {
+        document.querySelector('h1').
+        innerHTML = "Best JS Series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearTimeout(changeMe)
+        console.log('STOPPED')
+    })
+</script>
+</html>
