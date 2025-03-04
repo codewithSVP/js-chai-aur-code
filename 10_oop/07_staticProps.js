@@ -1,4 +1,4 @@
-// +++++++++++++ Static Propreties +++++++++++++
+// +++++++++++++ Static Properties +++++++++++++
 class User {
     constructor(username) {
         this.username = username;
